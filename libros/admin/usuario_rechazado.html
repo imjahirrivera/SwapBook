@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario Rechazadoo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('../img/fondo.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            overflow-y: auto;
+            max-height: 100vh;
+        }
+
+        .highlight-title {
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .highlight-title h2 {
+            margin: 0;
+        }
+
+        .div-volver {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boton-volver {
+            display: flex;
+            width: 11rem;
+            height: 3rem;
+            background-color: #C1C1C1;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body class="flex justify-center items-center">
+    <div class= "background-image"></div>
+    <div class="container">
+        <h1 class="text-3xl font-semibold bg-gray-800 text-white p-4 text-center rounded-3xl mb-6">RECHAZADO</h1>
+        
+        <div class="highlight-title">
+            <h2>Informacion al respecto:</h2>
+        </div>
+        <ul class="list-disc list-inside mb-4">
+            <li>Has sido rechazado por un administrador de SwapBook.</li>
+            <li>No podras acceder al sistema desde ahora.</li>
+        </ul>
+
+    </div>
+
+<script>
+    function volver() {
+        window.history.back();
+    }
+</script>
+
+</body>
+</html>
